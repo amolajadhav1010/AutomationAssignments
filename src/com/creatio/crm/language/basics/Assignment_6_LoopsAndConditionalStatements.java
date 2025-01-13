@@ -98,6 +98,6 @@ public class Assignment_6_LoopsAndConditionalStatements {
 		  		System.out.printf("4. Transaction amount is within limit: %d", limit);
 		  		break;
 		  }
-		}
+	   }
 	}
 	

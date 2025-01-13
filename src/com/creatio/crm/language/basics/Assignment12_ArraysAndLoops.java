@@ -20,29 +20,40 @@ public class Assignment12_ArraysAndLoops
                     1
 		 */
 		
-		int a=5;
-		
-		for (int b=1; b<=a; b++)
+		int n=5;
+		//Top half diamond
+		for (int i=1; i<=n; i++)
 		{ 
-		     for (int c=1; c<=b; c++) 
+		//Print leading spaces
+		     for (int j=i; j<n; j++) 
 			 {
-			   System.out.printf(c+" ");	 
+			   System.out.print(" ");
 			 }
-		  System.out.println();
-	    }
-		
-		for (int d=a-1; a>=1;a--)
+		  
+		//Print numbers
+		for (int j=1; j<=i; j++)
 		{
-			for(int e = 1; e<=a; e++) 
-			{
-				System.out.printf(e+" ");
-			}
+			System.out.print(j+" ");
+		}
 		  System.out.println();
 		}
 		
+		//Bottom half diamond
+		for (int i = n-1; i >=1; i--) 
+		{
+		 for(int j=n; j>i; j--)
+		 {
+			 System.out.print(" ");
+		 }
+		 
+		//Print numbers 
+		for(int j=1; j<=i; j++)
+		{
+			System.out.print(j+" ");
+		}
+		System.out.println();
 		
 	    }
 		
-		
 	}
-
+}
